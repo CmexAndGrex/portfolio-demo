@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1c1e24">
+<title>Portfolio — Fullstack &amp; Visual</title>
+<meta name="description" content="Портфолио fullstack-разработчика и создателя визуального контента: приложения, десктопные утилиты, веб-кейсы, моушн-дизайн и видеопродакшн.">
+<meta name="author" content="Данил Стефин">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Portfolio — Fullstack &amp; Visual">
+<meta property="og:description" content="Fullstack-разработчик и создатель визуального контента. От архитектуры базы данных до промо-ролика.">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Portfolio — Fullstack &amp; Visual">
+<meta property="og:url" content="https://cmexandgrex.github.io/portfolio-demo/">
+<meta property="og:image" content="https://cmexandgrex.github.io/portfolio-demo/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cmexandgrex.github.io/portfolio-demo/og-image.jpg">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#projects">Перейти к работам</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="Portfolio — на главную">
+      <span class="brand-name">Portfolio</span>
+      <span class="brand-tag">fullstack · visual</span>
+    </a>
+
+    <nav class="nav-center" aria-label="Направления">
+      <a href="#projects">WEB</a>
+      <span class="nav-sep" aria-hidden="true">/</span>
+      <a href="#projects">DESKTOP</a>
+      <span class="nav-sep" aria-hidden="true">/</span>
+      <a href="#media">MOTION</a>
+    </nav>
+
+    <nav class="menu-stack" aria-label="Основная навигация">
+      <a href="#projects">РАБОТЫ</a>
+      <a href="#about">ОБО МНЕ</a>
+      <a href="#skills">СТЕК</a>
+      <a href="#media">МЕДИА</a>
+      <a href="#contact">КОНТАКТЫ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-inner">
+      <h1 class="hero-title">Fullstack &amp; Visual</h1>
+      <span class="hero-dot" aria-hidden="true"></span>
+    </div>
+
+    <div class="hero-bottom">
+      <a class="scroll-badge" href="#projects" aria-label="Прокрутить вниз к проектам">
+        <svg class="badge-ring" viewBox="0 0 84 84" aria-hidden="true" focusable="false">
+          <defs>
+            <path id="badgeCircle" d="M42,42 m-31,0 a31,31 0 1,1 62,0 a31,31 0 1,1 -62,0" fill="none"></path>
+          </defs>
+          <text class="badge-text">
+            <textPath href="#badgeCircle" startOffset="0" textLength="190" lengthAdjust="spacing">SCROLL DOWN • SCROLL DOWN •</textPath>
+          </text>
+        </svg>
+        <span class="badge-arrow" aria-hidden="true">
+          <svg viewBox="0 0 12 12" focusable="false">
+            <path d="M6 1.2v9.1M2.5 6.8 6 10.3l3.5-3.5"></path>
+          </svg>
+        </span>
+      </a>
+      <a class="hero-link" href="#projects">→ Избранные проекты</a>
+    </div>
+
+    <div class="hero-fade" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ 01 / PROJECTS ============ -->
+  <section class="section section-projects" id="projects">
+    <div class="section-head">
+      <p class="section-index">01 / Избранные проекты</p>
+      <div class="filters" role="group" aria-label="Фильтр проектов">
+        <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+        <button class="filter-btn" type="button" data-filter="app" aria-pressed="false">Приложения</button>
+        <button class="filter-btn" type="button" data-filter="desktop" aria-pressed="false">Десктоп-утилиты</button>
+        <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Веб-кейсы</button>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+
+    <noscript>
+      <p class="noscript-note">Для отображения галереи проектов включите JavaScript — карточки и панели с деталями собираются на клиенте.</p>
+    </noscript>
+  </section>
+
+  <!-- ============ 02 / ABOUT ============ -->
+  <section class="section section-about" id="about">
+    <div class="section-head">
+      <p class="section-index">02 / Обо мне и манифест</p>
+    </div>
+
+    <h2 class="about-lead">Fullstack-разработчик и создатель визуального контента. Беру продукт целиком — от архитектуры базы данных до промо-ролика.</h2>
+
+    <div class="about-cols">
+      <p>Разработка веб-приложений и десктопных инструментов автоматизации на React, Next.js, TypeScript, Node.js и Python. Проектирую схему данных, API и интерфейс как одну систему: бизнес-логика не рвётся на стыках между слоями, а админка, склад, очередь обмена и отчёты опираются на одну и ту же модель данных.</p>
+      <p>Параллельно — коммерческий моушн-дизайн и видеопродакшн: Reels и Shorts, кинетическая типографика, 3D-анимация логотипов, цветокоррекция и нейровизуал. Визуальный язык продукта и его инженерная часть собираются в одном процессе, поэтому ролик и интерфейс говорят на одном языке.</p>
+    </div>
+  </section>
+
+  <!-- ============ 03 / SKILLS ============ -->
+  <section class="section section-skills" id="skills">
+    <div class="section-head">
+      <p class="section-index">03 / Стек</p>
+    </div>
+
+    <div class="skills">
+      <div class="skill-row">
+        <span class="skill-key">/01</span>
+        <span class="skill-name">Frontend &amp; Mobile</span>
+        <ul class="skill-list">
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>React Native / Expo</li>
+          <li>Reanimated 3</li>
+          <li>Tailwind CSS</li>
+          <li>Responsive Grid</li>
+        </ul>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-key">/02</span>
+        <span class="skill-name">Backend &amp; Data</span>
+        <ul class="skill-list">
+          <li>Python</li>
+          <li>FastAPI</li>
+          <li>Node.js / Express</li>
+          <li>PostgreSQL</li>
+          <li>Drizzle ORM</li>
+          <li>SQLite</li>
+          <li>RabbitMQ</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-key">/03</span>
+        <span class="skill-name">Desktop &amp; Network</span>
+        <ul class="skill-list">
+          <li>SOCKS5 / HTTP Proxy</li>
+          <li>SSH Tunneling</li>
+          <li>Split Tunneling</li>
+          <li>Telethon</li>
+          <li>aiogram</li>
+          <li>Tesseract OCR</li>
+          <li>Inno Setup</li>
+        </ul>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-key">/04</span>
+        <span class="skill-name">Motion &amp; Visual</span>
+        <ul class="skill-list">
+          <li>Монтаж Reels &amp; Shorts</li>
+          <li>Кинетическая типографика</li>
+          <li>3D-анимация логотипов</li>
+          <li>Цветокоррекция</li>
+          <li>Нейровизуал</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 / MEDIA ============ -->
+  <section class="section section-media" id="media">
+    <div class="section-head">
+      <p class="section-index">04 / Медиа</p>
+      <p class="media-count" id="mediaCount">24 видео · 10 изображений</p>
+    </div>
+
+    <div class="media-tabs" role="tablist" aria-label="Категории видео">
+      <button class="filter-btn is-active" type="button" role="tab" aria-selected="true" data-cat="all">Все видео</button>
+      <button class="filter-btn" type="button" role="tab" aria-selected="false" data-cat="animation">Анимационные</button>
+      <button class="filter-btn" type="button" role="tab" aria-selected="false" data-cat="light">Лёгкие в исполнении</button>
+      <button class="filter-btn" type="button" role="tab" aria-selected="false" data-cat="hard">Сложные в исполнении</button>
+    </div>
+
+    <div class="video-grid" id="videoGrid" role="tabpanel" aria-label="Видеоролики"></div>
+
+    <div class="section-head section-head--inner">
+      <p class="section-index">Изображения</p>
+      <p class="media-count">10 работ</p>
+    </div>
+
+    <div class="image-grid" id="imageGrid"></div>
+  </section>
+
+  <!-- ============ 05 / CONTACT ============ -->
+  <section class="section section-contact" id="contact">
+    <div class="section-head">
+      <p class="section-index">05 / Контакты</p>
+    </div>
+
+    <div class="contact-cards">
+
+      <article class="contact-card contact-card--tg">
+        <div class="contact-card-head">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M21.9 3.1 18.7 20.2c-.24 1.06-.87 1.32-1.76.82l-4.87-3.59-2.35 2.26c-.26.26-.48.48-.98.48l.35-4.96 9.03-8.16c.39-.35-.09-.54-.6-.19L6.36 13.4 1.6 11.9c-1.04-.32-1.06-1.04.22-1.54L20.5 2.1c.86-.32 1.62.19 1.4 1.0Z"></path>
+            </svg>
+          </span>
+          <svg class="contact-wave" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M0 21C24 8 46 32 74 26 102 20 124 4 200 17V40H0Z" fill="#23262f"></path>
+          </svg>
+        </div>
+        <div class="contact-body">
+          <p class="contact-label">Telegram · Данил</p>
+          <p class="contact-handle">@cmexandgrexx</p>
+          <div class="contact-actions">
+            <a class="pill" href="https://t.me/cmexandgrexx" target="_blank" rel="noopener noreferrer">Написать ↗</a>
+            <a class="contact-arrow" href="https://t.me/cmexandgrexx" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram @cmexandgrexx">↗</a>
+          </div>
+        </div>
+        <span class="contact-glow" aria-hidden="true"></span>
+      </article>
+
+      <article class="contact-card contact-card--tg">
+        <div class="contact-card-head">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M21.9 3.1 18.7 20.2c-.24 1.06-.87 1.32-1.76.82l-4.87-3.59-2.35 2.26c-.26.26-.48.48-.98.48l.35-4.96 9.03-8.16c.39-.35-.09-.54-.6-.19L6.36 13.4 1.6 11.9c-1.04-.32-1.06-1.04.22-1.54L20.5 2.1c.86-.32 1.62.19 1.4 1.0Z"></path>
+            </svg>
+          </span>
+          <svg class="contact-wave" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M0 21C24 8 46 32 74 26 102 20 124 4 200 17V40H0Z" fill="#23262f"></path>
+          </svg>
+        </div>
+        <div class="contact-body">
+          <p class="contact-label">Telegram · Илья</p>
+          <p class="contact-handle">@ilyakunaev</p>
+          <div class="contact-actions">
+            <a class="pill" href="https://t.me/ilyakunaev" target="_blank" rel="noopener noreferrer">Написать ↗</a>
+            <a class="contact-arrow" href="https://t.me/ilyakunaev" target="_blank" rel="noopener noreferrer" aria-label="Открыть Telegram @ilyakunaev">↗</a>
+          </div>
+        </div>
+        <span class="contact-glow" aria-hidden="true"></span>
+      </article>
+
+      <article class="contact-card contact-card--mail">
+        <div class="contact-card-head">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M3.4 5h17.2A1.4 1.4 0 0 1 22 6.4v11.2a1.4 1.4 0 0 1-1.4 1.4H3.4A1.4 1.4 0 0 1 2 17.6V6.4A1.4 1.4 0 0 1 3.4 5Zm.1 1.6 8.5 5.85 8.5-5.85H3.5Z"></path>
+            </svg>
+          </span>
+          <svg class="contact-wave" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M0 21C24 8 46 32 74 26 102 20 124 4 200 17V40H0Z" fill="#23262f"></path>
+          </svg>
+        </div>
+        <div class="contact-body">
+          <p class="contact-label">Email · основной</p>
+          <p class="contact-handle">danil.stefin@gmail.com</p>
+          <div class="contact-actions">
+            <a class="pill" href="mailto:danil.stefin@gmail.com">Написать ↗</a>
+            <button class="pill pill--ghost" type="button" data-copy="danil.stefin@gmail.com" aria-label="Скопировать адрес danil.stefin@gmail.com">Скопировать</button>
+          </div>
+        </div>
+        <span class="contact-glow" aria-hidden="true"></span>
+      </article>
+
+      <article class="contact-card contact-card--mail-alt">
+        <div class="contact-card-head">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M3.4 5h17.2A1.4 1.4 0 0 1 22 6.4v11.2a1.4 1.4 0 0 1-1.4 1.4H3.4A1.4 1.4 0 0 1 2 17.6V6.4A1.4 1.4 0 0 1 3.4 5Zm.1 1.6 8.5 5.85 8.5-5.85H3.5Z"></path>
+            </svg>
+          </span>
+          <svg class="contact-wave" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M0 21C24 8 46 32 74 26 102 20 124 4 200 17V40H0Z" fill="#23262f"></path>
+          </svg>
+        </div>
+        <div class="contact-body">
+          <p class="contact-label">Email · дополнительный</p>
+          <p class="contact-handle">ilakunaev21@gmail.com</p>
+          <div class="contact-actions">
+            <a class="pill" href="mailto:ilakunaev21@gmail.com">Написать ↗</a>
+            <button class="pill pill--ghost" type="button" data-copy="ilakunaev21@gmail.com" aria-label="Скопировать адрес ilakunaev21@gmail.com">Скопировать</button>
+          </div>
+        </div>
+        <span class="contact-glow" aria-hidden="true"></span>
+      </article>
+
+      <article class="contact-card contact-card--github">
+        <div class="contact-card-head">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+            </svg>
+          </span>
+          <svg class="contact-wave" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M0 21C24 8 46 32 74 26 102 20 124 4 200 17V40H0Z" fill="#23262f"></path>
+          </svg>
+        </div>
+        <div class="contact-body">
+          <p class="contact-label">GitHub · репозитории</p>
+          <p class="contact-handle">github.com/CmexAndGrex</p>
+          <div class="contact-actions">
+            <a class="pill" href="https://github.com/CmexAndGrex" target="_blank" rel="noopener noreferrer">Написать ↗</a>
+            <a class="contact-arrow" href="https://github.com/CmexAndGrex" target="_blank" rel="noopener noreferrer" aria-label="Открыть GitHub CmexAndGrex">↗</a>
+          </div>
+        </div>
+        <span class="contact-glow" aria-hidden="true"></span>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-brand">Portfolio <span>fullstack · visual</span></p>
+    <p class="footer-copy">© <span id="footerYear">2026</span> Данил Стефин · Илья Кунаев</p>
+    <a class="footer-top" href="#top">Наверх ↑</a>
+  </div>
+</footer>
+
+<!-- ============ DRAWER ============ -->
+<div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+
+<aside class="drawer" id="projectDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true" tabindex="-1">
+  <div class="drawer-head">
+    <p class="drawer-kicker" id="drawerKicker"></p>
+    <button class="drawer-close" id="drawerClose" type="button" aria-label="Закрыть панель проекта">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+
+<!-- ============ VIDEO MODAL ============ -->
+<div class="modal" id="mediaModal" role="dialog" aria-modal="true" aria-labelledby="mediaModalTitle" aria-hidden="true">
+  <div class="modal-backdrop" data-close="modal" aria-hidden="true"></div>
+  <div class="modal-panel" role="document">
+    <div class="modal-head">
+      <p class="modal-title" id="mediaModalTitle"></p>
+      <button class="modal-close" type="button" data-close="modal" aria-label="Закрыть видео">✕</button>
+    </div>
+    <div class="modal-body" id="mediaModalBody"></div>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр изображения" aria-hidden="true">
+  <div class="lightbox-backdrop" data-close="lightbox" aria-hidden="true"></div>
+  <button class="lightbox-close" type="button" data-close="lightbox" aria-label="Закрыть изображение">✕</button>
+  <button class="lightbox-btn lightbox-prev" id="lightboxPrev" type="button" aria-label="Предыдущее изображение">‹</button>
+  <figure class="lightbox-figure">
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
+  </figure>
+  <button class="lightbox-btn lightbox-next" id="lightboxNext" type="button" aria-label="Следующее изображение">›</button>
+</div>
+
+<p class="live-region" id="liveRegion" role="status" aria-live="polite"></p>
+
+<script src="main.js" defer></script>
+</body>
+</html>
